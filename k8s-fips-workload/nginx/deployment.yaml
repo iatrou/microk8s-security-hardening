@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-fips-deployment
+  labels:
+    app: nginx-fips
+spec:
+  selector:
+    matchLabels:
+      app: nginx-fips
+  template:
+    metadata:
+      labels:
+        app: nginx-fips
+    spec:
+      containers:
+      - name: nginx-fips
+        image: localhost:32000/nginx-fips:latest
+        ports:
+        - containerPort: 443
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-fips
+  labels:
+    app: nginx-fips
+spec:
+  ports:
+  - nodePort: 31045
+    port: 443
+    protocol: TCP
+    targetPort: 443
+  selector:
+    app: nginx-fips
+  sessionAffinity: None
+  type: NodePort

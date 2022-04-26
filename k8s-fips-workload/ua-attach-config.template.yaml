@@ -1,0 +1,3 @@
+token: <UA TOKEN HERE>
+enable_services:
+  - fips
