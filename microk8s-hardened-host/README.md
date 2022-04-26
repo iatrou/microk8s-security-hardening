@@ -32,14 +32,14 @@ sudo apt install usg
 ```
 
 ### For CIS compliance
-[Canonical blog on CIS compliance](https://ubuntu.com/blog/cis-security-compliance-usg)
-[Canonical tutorial on CIS or DISA STIG compliance](https://ubuntu.com/tutorials/comply-with-cis-or-disa-stig-on-ubuntu#1-overview)
-[Audit docs](https://ubuntu.com/security/certifications/docs/usg/cis/audit)
-[Compliance docs](https://ubuntu.com/security/certifications/docs/usg/cis/compliance)
+* [Canonical blog on CIS compliance](https://ubuntu.com/blog/cis-security-compliance-usg)
+* [Canonical tutorial on CIS or DISA STIG compliance](https://ubuntu.com/tutorials/comply-with-cis-or-disa-stig-on-ubuntu#1-overview)
+* [Audit docs](https://ubuntu.com/security/certifications/docs/usg/cis/audit)
+* [Compliance docs](https://ubuntu.com/security/certifications/docs/usg/cis/compliance)
 
 ### For DISA STIG compliance
-[Audit docs](https://ubuntu.com/security/certifications/docs/disa-stig/audit)
-[Compliance docs](https://ubuntu.com/security/certifications/docs/disa-stig/compliance)
+* [Audit docs](https://ubuntu.com/security/certifications/docs/disa-stig/audit)
+* [Compliance docs](https://ubuntu.com/security/certifications/docs/disa-stig/compliance)
 
 Check FIPS binaries after restarting host
 ```bash
@@ -50,7 +50,7 @@ dpkg-query --show openssl # fips included in version name
 ```
 
 ## Testing Microk8s with Sonobouy
-[Sonobouy official docs](https://github.com/vmware-tanzu/sonobuoy)
+* [Sonobouy official docs](https://github.com/vmware-tanzu/sonobuoy)
 
 Install Sonobouy
 ```bash

@@ -33,7 +33,9 @@ sudo docker build . -t $REGISTRY/nginx-fips
 ```
 
 List NGINX ciphers
-https://testssl.sh/openssl-iana.mapping.html
+* [FIPS mode and TLS](https://wiki.openssl.org/index.php/FIPS_mode_and_TLS)
+* [Ciphers naming format mapping](https://testssl.sh/openssl-iana.mapping.html)
+
 ```bash
 sudo docker run -it -d -p 8443:443 $REGISTRY/nginx-fips:latest
 nmap -sV --script ssl-enum-ciphers -p 8443 localhost | grep TLS_ > /tmp/all_ciphers.out
@@ -47,7 +49,7 @@ microk8s.kubectl apply -f deployment.yaml
 ```
 
 Testing ciphers with NGINX
-- https://docs.nginx.com/nginx/fips-compliance-nginx-plus/
+* [NGINX FIPS compliance](https://docs.nginx.com/nginx/fips-compliance-nginx-plus/)
 
 ```bash
 PORT=31045
