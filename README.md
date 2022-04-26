@@ -76,3 +76,7 @@ RES=$(sonobuoy retrieve) && sonobuoy results $RES
 sonobuoy delete --wait
 ```
 
+## Adding FIPS enabled workloads
+-> [K8s FIPS enabled container workload](./k8s-fips-workload/README.md)
+
+
